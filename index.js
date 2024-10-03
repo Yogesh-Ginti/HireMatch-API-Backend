@@ -38,9 +38,13 @@ app.get('/', (req, res)=>{
     sucess: true,
     name:'NextHire',
     route:[
-      {'/job/all/:jobCategory':'to fetch all jobs of a specific category'},
+      {'/search' : 'to search any job',
+        'search query options' : ["title","category","location","jobType"] 
+      },
+      {'/job/all/:jobCategory':'to fetch all jobs of a specific category',
+        'categories options' :["hr-jobs", "sales-jobs", "it-jobs", "marketing-jobs"]
+      },
       {'/job/all/:jobId':'to fetch a specific Job'},
-      {'/search' : 'to search any job by title,category,location,employment type'},
       {'/user/register' : 'to register a new User'},
       {'/user/login' : 'to login a new User'},
       {'/bookmark' : 'to fetch user all bookmarks'},
