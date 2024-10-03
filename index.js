@@ -44,7 +44,7 @@ app.get('/', (req, res)=>{
       {'/job/all/:jobCategory':'to fetch all jobs of a specific category',
         'categories options' :["hr-jobs", "sales-jobs", "it-jobs", "marketing-jobs"]
       },
-      {'/job/all/:jobId':'to fetch a specific Job'},
+      {'/job/:jobId':'to fetch a specific Job'},
       {'/user/register' : 'to register a new User'},
       {'/user/login' : 'to login a new User'},
       {'/bookmark' : 'to fetch user all bookmarks'},
