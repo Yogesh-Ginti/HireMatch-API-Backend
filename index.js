@@ -40,6 +40,7 @@ app.get('/', (req, res)=>{
     route:[
       {'/job/all/:jobCategory':'to fetch all jobs of a specific category'},
       {'/job/all/:jobId':'to fetch a specific Job'},
+      {'/serach' : 'to search any job by title,category,location,employment type'},
       {'/user/register' : 'to register a new User'},
       {'/user/login' : 'to login a new User'},
       {'/bookmark' : 'to fetch user all bookmarks'},
