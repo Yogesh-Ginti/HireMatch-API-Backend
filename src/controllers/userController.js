@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
 import userModel from '../models/userModel.js';
-import { secret } from '../../api/index.js';
+import { secret } from '../../index.js';
 
 
 export const handleUserRegister = async (req, res) => {
