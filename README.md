@@ -9,6 +9,9 @@ NextHire is a job-searching platform API built with Express.js. This API allows 
 - User registration and login
 - Bookmark management (add, fetch, and delete bookmarks)
 
+## Deployed Link
+  - https://next-hire-backend.vercel.app
+
 ## Technologies Used
 
 - **Express.js**: Web framework for Node.js.
