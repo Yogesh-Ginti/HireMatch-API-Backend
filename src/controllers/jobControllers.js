@@ -1,8 +1,5 @@
 import jobModel from '../models/jobModel.js'
 
-export const handleRes =async(req, res) => {
-  res.send('hello')
-}
 
 export const handleAllJobs = async(req, res)=>{
   const {jobCategory} = req.params

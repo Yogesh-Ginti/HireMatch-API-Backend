@@ -6,7 +6,6 @@ import { secret } from '../../index.js';
 
 export const handleUserRegister = async (req, res) => {
   const {username, email, password} = req.body;
-  console.log('sec',secret)
 
    // Validate input
    if (!username || !email || !password) {
