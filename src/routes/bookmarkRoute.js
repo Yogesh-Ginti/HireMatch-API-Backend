@@ -5,7 +5,7 @@ import { isUserVaild } from '../middleware/userAuth.js'
 
 const router = express.Router()
 router.get('/',isUserVaild, handleAllBookmarks)
-router.get('/add', isUserVaild, handleAddBookmark)
-router.get('/delete', isUserVaild, handleDeleteBookmark)
+router.post('/add', isUserVaild, handleAddBookmark)
+router.delete('/delete', isUserVaild, handleDeleteBookmark)
 
 export default router;
