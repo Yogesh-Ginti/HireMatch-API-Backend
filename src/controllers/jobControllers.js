@@ -19,7 +19,6 @@ export const handleAllJobs = async(req, res)=>{
 
 export const handleJobById = async(req, res)=>{
   const {jobId} = req.params
-  console.log(jobId)
   try {
     const job = await jobModel.findById(jobId)
     if(!job) res.status(404).json({
